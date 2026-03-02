@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de CEP por Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Localizar CEP</h1>
+        <p>Preencha os dados abaixo para encontrar o código postal.</p>
+        
+        <form id="addressForm">
+            <input type="text" id="uf" placeholder="UF (ex: SP)" maxlength="2" required>
+            <input type="text" id="cidade" placeholder="Cidade (ex: São Paulo)" required>
+            <input type="text" id="rua" placeholder="Rua / Avenida" required>
+            <button type="submit">Buscar CEP</button>
+        </form>
+
+        <div id="loading" class="hidden">Buscando...</div>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
